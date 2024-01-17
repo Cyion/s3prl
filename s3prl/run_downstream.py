@@ -1,4 +1,6 @@
 import os
+import sys
+sys.path.append("/beegfs/work/reichert/s3prl") 
 import yaml
 import glob
 import torch
