@@ -102,8 +102,9 @@ def main():
     # Select data sets
     for idx, s in enumerate(SETS):
         print('\t', idx, ':', s)
-    tr_set = input('Please enter the index of splits you wish to use preprocess. (seperate with space): ')
-    tr_set = [SETS[int(t)] for t in tr_set.split(' ')]
+    #tr_set = input('Please enter the index of splits you wish to use preprocess. (seperate with space): ')
+    #tr_set = [SETS[int(t)] for t in tr_set.split(' ')]
+    tr_set = SETS
 
     # Acoustic Feature Extraction & Make Data Table
     generate_length(args, tr_set, args.audio_extension)
